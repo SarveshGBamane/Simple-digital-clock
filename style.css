@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+    background-color: rgb(213, 255, 241);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#clock_div {
+    height: auto;
+    width: 90%; 
+    max-width: 1000px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
+
+    box-sizing: border-box;
+}
+
+#h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: clamp(32px, 6vw, 80px);
+    margin: 0;
+    padding-top: 20px;
+    color: rgb(26, 39, 84);
+    text-align: center;
+}
+
+
+
+#clock {
+    background-color: rgb(215, 255, 94);
+    width: 90%;
+    max-width: 850px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: clamp(40px, 10vw, 130px); 
+    padding: 20px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    font-family: "Playwrite AU QLD", cursive;
+    
+}
+
+#p {
+    font-size: clamp(14px, 3vw, 28px);
+    color: rgb(255, 206, 60);
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+
+@media (max-width: 600px) {
+    #clock_div {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    #clock_div {
+        width: 95%;
+    }
+
+    #clock {
+        font-size: clamp(40px, 8vw, 100px);
+    }
+}
+
